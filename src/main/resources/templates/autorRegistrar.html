@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="interior">
+          <a href="#" class="logo" target="blank"><img src="img/libros.png" alt="Logo"></a>
+          <nav class="navegacion">
+            <ul>
+              <li><a href="index.html" target="blank">Inicio</a></li>
+              <li class="submenu">
+                  <a href="" target="blank">Libros</a>
+                  <ul class="hijos">
+                      <li><a href="libroRegistrar.html">Registar</a></li>
+                      <li><a href="libroModificar.html">Modificar</a></li>
+                      <li><a href="">alta</a></li>
+                      <li><a href="">baja</a></li>
+                     
+                    </ul>
+              </li>
+              <li class="submenu">
+                <a href="" target="blank">Autores</a>
+                <ul class="hijos">
+                  <li><a href="#">Registar</a></li>
+                  <li><a href="autorModificar.html">Modificar</a></li>
+                  <li><a href="">alta</a></li>
+                  <li><a href="">baja</a></li>
+                  
+                </ul>
+              </li>
+              <li class="submenu" >
+                  <a href="" target="blank">Editorial</a>
+                  <ul class="hijos">
+                      <li><a href="editorialRegistrar.html">Registar</a></li>
+                      <li><a href="editorialModificar.html">Modificar</a></li>
+                      <li><a href="">alta</a></li>
+                      <li><a href="">baja</a></li>
+                      
+                    </ul>
+              </li>
+              <li><a href="" target="blank">Login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    <h1>Autores Registrar</h1>
+    <form class="formulario">
+        <h1>Registrar</h1>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <input type="text" placeholder="Nombre">
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <input type="radio" name="Alta" value="1"> ALTA
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Registrar" class="button">
+            <p>¿El Autor ya se encuentra regitrado?, Quiere <a class="link" href="autorModificar.html">Modificar</a></p>
+        </div>
+        
+    </form>
+    <footer>
+        <p class="copy">&copy;2022 Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

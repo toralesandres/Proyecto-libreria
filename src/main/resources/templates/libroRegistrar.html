@@ -51,48 +51,51 @@
         </div>
       </header>
     <h1>Libros</h1>
-    <form class="formulario">
+    <form class="formulario" action="/libroRegistrar" method="POST" >
         <h1>Registrar</h1>
         <div class="contenedor">
             <div class="input-contenedor">
-                <input type="text" placeholder="ISBN">
+                <input type="text" placeholder="ISBN" name="isbn">
             </div>
         </div>
         <div class="contenedor">
             <div class="input-contenedor">
-                <input type="text" placeholder="TITULO">
+                <input type="text" placeholder="TITULO" name="titulo">
             </div>
         </div>
         <div class="contenedor">
             <div class="input-contenedor">
-                <input type="number" placeholder="AÑO">
+                <input type="number" placeholder="AÑO" name="anio">
             </div>
         </div>
         <div class="contenedor">
             <div class="input-contenedor">
-                <input type="number" placeholder="EJEMPLARES">
+                <input type="number" placeholder="EJEMPLARES" name="ejemplares">
             </div>
         </div>
         <div class="contenedor">
             <div class="input-contenedor">
-                <input type="radio" name="Alta" value="1"> ALTA
+                <input type="radio" name="alta" value="1"> ALTA
+            </div>
+        </div>
+        <!--
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <input type="text" placeholder="AUTOR" name="autor">
             </div>
         </div>
         <div class="contenedor">
             <div class="input-contenedor">
-                <input type="text" placeholder="AUTOR">
+                <input type="text" placeholder="EDITORIAL" name="editorial">
             </div>
         </div>
+        <!--
         <div class="contenedor">
             <div class="input-contenedor">
-                <input type="text" placeholder="EDITORIAL">
+                <input type="file"  name="foto" id="imgadd" placeholder="Seleccione una Imagen">
             </div>
-        </div>
-        <div class="contenedor">
-            <div class="input-contenedor">
-                <input type="text" placeholder="IMAGEN">
-            </div>
-        </div>
+        </div>   -->
+        
         <div>
             <input type="submit" value="Registrar" class="button">
             <p>¿El libro ya se encuentra registrado?, quiere  <a class="link" href="libroModificar.html">Modificar</a></p>

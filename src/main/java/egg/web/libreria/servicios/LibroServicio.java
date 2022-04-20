@@ -20,9 +20,9 @@ public class LibroServicio {
     @Autowired
     private FotoServicio fotoServicio;
     
-    public void crearLibro(MultipartFile archivo, Long isbn, String titulo, Integer anio, Integer ejemplares,
-                            Integer ejemplaresPrestados,  Integer ejemplaresRestantes,
-                            boolean alta, Autor autor, Editorial editorial) throws ErrorServicio {
+    public void crearLibro( String isbn, String titulo, Integer anio, Integer ejemplares,
+                            
+                            boolean alta, Autor autor, Editorial editorial, MultipartFile archivo) throws ErrorServicio {
         
         validar(isbn, titulo, anio, ejemplares);
         
@@ -41,7 +41,7 @@ public class LibroServicio {
         libroRepositorio.save(libro);
     }
     
-    public void modificarLibro(MultipartFile archivo, String id, Long isbn, String titulo, Integer anio, Integer ejemplares,
+    public void modificarLibro(MultipartFile archivo, String id, String isbn, String titulo, Integer anio, Integer ejemplares,
                             Integer ejemplaresPrestados,  Integer ejemplaresRestantes,
                             boolean alta, Autor autor, Editorial editorial) throws ErrorServicio{
         validar(isbn,titulo, anio,ejemplares);
@@ -98,10 +98,10 @@ public class LibroServicio {
     
     
     
-    public void validar(Long isbn,  String titulo, Integer anio, Integer ejemplares) throws ErrorServicio {
+    public void validar(String isbn,  String titulo, Integer anio, Integer ejemplares) throws ErrorServicio {
          
-        if(isbn == null || isbn <= 13){
-            throw new ErrorServicio("El año es invalido y tiene que tener este formato " + " 2005 ");
+        if(isbn == null || isbn.isEmpty() ){
+            throw new ErrorServicio("El ISBN es invalido y no puede ser nulo ");
         } 
         
         if(titulo == null || titulo.isEmpty()){

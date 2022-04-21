@@ -9,17 +9,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-/**
- *
- * @author Andes
- */
 @Controller
-@RequestMapping("/")  
-public class PortalControlador {
+@RequestMapping("/") 
+public class EditorialControlador {
     
-    @GetMapping("/")
-    public String index(){  
-    return "index.html";
+    @GetMapping("/editorialRegistrar")
+    public String editorialRegistrar(){  
+    return "editorialRegistrar.html";
     }
     
+     @GetMapping("/editorialModificar")
+    public String editorialModificar(){  
+    return "editorialModificar.html";
+    }
 }

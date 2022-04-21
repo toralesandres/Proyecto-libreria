@@ -17,8 +17,8 @@
               <li class="submenu">
                   <a href="" target="blank">Libros</a>
                   <ul class="hijos">
-                      <li><a href="libroRegistrar.html">Registar</a></li>
-                      <li><a href="libroModificar.html">Modificar</a></li>
+                      <li><a href="/libroRegistrar">Registar</a></li>
+                      <li><a href="/libroModificar">Modificar</a></li>
                       <li><a href="">alta</a></li>
                       <li><a href="">baja</a></li>
                      
@@ -28,7 +28,7 @@
                 <a href="" target="blank">Autores</a>
                 <ul class="hijos">
                   <li><a href="#">Registar</a></li>
-                  <li><a href="autorModificar.html">Modificar</a></li>
+                  <li><a href="/autorModificar">Modificar</a></li>
                   <li><a href="">alta</a></li>
                   <li><a href="">baja</a></li>
                   
@@ -37,8 +37,8 @@
               <li class="submenu" >
                   <a href="" target="blank">Editorial</a>
                   <ul class="hijos">
-                      <li><a href="editorialRegistrar.html">Registar</a></li>
-                      <li><a href="editorialModificar.html">Modificar</a></li>
+                      <li><a href="/editorialRegistrar">Registar</a></li>
+                      <li><a href="/editorialModificar">Modificar</a></li>
                       <li><a href="">alta</a></li>
                       <li><a href="">baja</a></li>
                       
@@ -50,21 +50,21 @@
         </div>
       </header>
     <h1>Autores Registrar</h1>
-    <form class="formulario">
+    <form class="formulario" action="/registrarAutor" method="POST">
         <h1>Registrar</h1>
         <div class="contenedor">
             <div class="input-contenedor">
-                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Nombre" name ="nombre">
             </div>
         </div>
         <div class="contenedor">
             <div class="input-contenedor">
-                <input type="radio" name="Alta" value="1"> ALTA
+                <input type="radio" name="alta" value="1"> ALTA
             </div>
         </div>
         <div>
             <input type="submit" value="Registrar" class="button">
-            <p>¿El Autor ya se encuentra regitrado?, Quiere <a class="link" href="autorModificar.html">Modificar</a></p>
+            <p>¿El Autor ya se encuentra regitrado?, Quiere <a class="link" href="/autorModificar">Modificar</a></p>
         </div>
         
     </form>

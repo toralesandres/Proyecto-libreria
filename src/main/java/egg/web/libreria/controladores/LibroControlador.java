@@ -35,7 +35,7 @@ public class LibroControlador {
     return "libroRegistrar.html";
     }
     
-     @PostMapping("/libroRegistrar")
+     @PostMapping("/registrarLibro")
     public String registrarLibro( @RequestParam String isbn, @RequestParam String titulo, @RequestParam Integer anio, @RequestParam Integer ejemplares, @RequestParam Boolean alta /* Autor autor,  Editorial editorial */  ) throws ErrorServicio{  
          System.out.println(isbn + titulo + anio + ejemplares + alta );
          try {
